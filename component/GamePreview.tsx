@@ -16,8 +16,8 @@ const GamePreview = () => {
 
   return (
     <div>
-        <h1>Nos jeux</h1>
-        <div className='flex m-4 grid grid-cols-5 gap-2'>{gameCard}</div>
+        <h1 className='text-center text-2xl font-bold my-4'>Nos jeux</h1>
+        <div className='flex mx-12 mb-6 grid grid-cols-5 gap-2'>{gameCard}</div>
         
     </div>
   )

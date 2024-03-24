@@ -33,7 +33,7 @@ const CardGame = (props : CardGameProps) => {
           <CardTitle>{props.item.title}</CardTitle>
           <CardDescription>{props.item.description}</CardDescription>
         </CardHeader>
-        <CardFooter className="flex justify-between">
+        <CardFooter className="flex justify-between items-end">
         <a href={props.item.link[0].play}>
           <button> Jouer</button>
         </a>
