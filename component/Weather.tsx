@@ -6,7 +6,7 @@ function Meteo() {
 
   const getMeteo = async () => {
     try {
-      const response = await fetch(`/api/meteo?cities=${city}`);
+      const response = await fetch(`/api/API?city=${city}`);
       if (!response.ok) {
         throw new Error('Erreur lors de la récupération des données météo');
       }

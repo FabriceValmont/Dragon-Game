@@ -5,7 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const apiKey = "69c1dd53d6ffa72551b75691d55b2bbcc342e1245945ac2eb2a417869065d329";
 
   try {
-    const apiUrl = `https://api.meteo-concept.com/api/location/city?token=${apiKey}&search=${city}`;
+    const apiUrl = `https://api.meteo-concept.com/api/location/cities?token=${apiKey}&search=${city}`;
     console.log('API URL:', apiUrl);
     const response = await fetch(apiUrl);
 
