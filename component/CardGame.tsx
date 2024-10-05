@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 type CardGameItem = {
   title: string;
@@ -37,7 +38,9 @@ const CardGame = (props : CardGameProps) => {
         <a href={props.item.link[0].play}>
           <button> Jouer</button>
         </a>
-        <a href={props.item.link[1].description}><button>Description</button></a>
+        <Link href={props.item.link[1].description}>
+            <button>Description</button>
+          </Link>
         </CardFooter>
       </Card>
     </div>

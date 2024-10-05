@@ -5,7 +5,7 @@ export default [
         image: "",
         link: [
             {play: ""},
-            {description: ""},
+            {description: "/morpion-cube"},
         ]
     },
     {
