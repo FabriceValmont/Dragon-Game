@@ -30,7 +30,9 @@ const CardGame = (props : CardGameProps) => {
     <div className="flex justify-center">
       <Card className="">
         <CardHeader>
-          <Image src={props.item.image} alt={props.item.title} />
+        {props.item.image ? (
+          <Image src={props.item.image} alt={props.item.title} width={300} height={200} />
+            ) : null}
           <CardTitle>{props.item.title}</CardTitle>
           <CardDescription>{props.item.description}</CardDescription>
         </CardHeader>
